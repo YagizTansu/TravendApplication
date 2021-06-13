@@ -14,5 +14,7 @@ public class MainActivity extends AppCompatActivity {
         //travend for push
 
         System.out.println("OL ARTIK");
+
+        System.out.println("oldu mu?");
     }
 }
