@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("OL ARTIK");
 
         System.out.println("oldu muu?");
+        System.out.println("oldu muu?");
     }
 }
