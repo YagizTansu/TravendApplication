@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //travend for sarp
+        //travend for push
+
+        System.out.println("OL ARTIK");
     }
 }
