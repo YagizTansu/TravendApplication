@@ -2,7 +2,10 @@ package com.example.travend;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.TabActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,15 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //travend for push
+    }
 
-        System.out.println("OL ARTIK");
-
-        System.out.println("oldu muu?");
-        System.out.println("oldu muu?");
-
-        System.out.println("Oldu ulan");
-
+    public void login(View view) {
+        Intent intent = new Intent(this, tabActivity.class);
+        startActivity(intent);
 
     }
 }
