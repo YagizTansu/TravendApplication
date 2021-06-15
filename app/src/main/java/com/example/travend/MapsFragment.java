@@ -34,6 +34,22 @@ public class MapsFragment extends Fragment {
             LatLng sydney = new LatLng(-34, 151);
             googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+            LatLng sydney1 = new LatLng(0, 151);
+            googleMap.addMarker(new MarkerOptions().position(sydney1).title("Marker in Sydney"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney1));
+
+            LatLng sydney2 = new LatLng(34, 151);
+            googleMap.addMarker(new MarkerOptions().position(sydney2).title("Marker in Sydney"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney2));
+
+            LatLng sydney3 = new LatLng(-24, 130);
+            googleMap.addMarker(new MarkerOptions().position(sydney3).title("Marker in Sydney"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney3));
+
+            LatLng sydney4 = new LatLng(-34, 180);
+            googleMap.addMarker(new MarkerOptions().position(sydney4).title("Marker in Sydney"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney4));
         }
     };
 
