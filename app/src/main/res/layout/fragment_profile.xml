@@ -4,45 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".ProfileFragment">
+    android:background="#FFEDDB"
+    tools:context=".ProfileFragment"><![CDATA[
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
     <ImageView
-        android:id="@+id/profile_image5"
-        android:layout_width="143dp"
-        android:layout_height="121dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="41dp"
-        app:layout_constraintBottom_toTopOf="@+id/poke"
+        android:id="@+id/imageView6"
+        android:layout_width="124dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="120dp"
+        android:rotationY="-42"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="157dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/profile3"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/profile1" />
-
-    <Button
-        android:id="@+id/poke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginBottom="37dp"
-        android:text="Poke"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="21dp"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="23dp"
         android:text="John Doe"
         android:textAlignment="center"
         android:textColor="#F4511E"
@@ -50,25 +64,78 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/poke"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profile_image5"
+        app:layout_constraintStart_toEndOf="@+id/profile"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Poke"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="383dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="327dp"
-        android:text="Gender :Male \nAge :24\nAbout : I like to talk about art, football and chess! "
+        android:layout_width="392dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="32dp"
+        android:text="Gender :\tMale \nAge :24\nAbout : I like to talk about art, football and chess! "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poke"
+        app:layout_constraintTop_toTopOf="parent"
         app:lineHeight="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="169dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="109dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="165dp"
+        android:rotationY="42"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="157dp"
+        android:layout_height="25dp"
+        android:text="Favorite Places"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="285dp" /><![CDATA[
+
+
+
+
+
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.523">
 
+
+
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
