@@ -76,6 +76,7 @@
         android:layout_marginStart="77dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="83dp"
+        android:onClick="onSignupBtnClick"
         android:text="Sıgn Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
