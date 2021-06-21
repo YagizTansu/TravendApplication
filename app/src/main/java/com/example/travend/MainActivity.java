@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(sIntent);
                 break;
             case R.id.button:
-
-
                 Intent lIntent = new Intent(this, tabActivity.class);
                 startActivity(lIntent);
                 break;
