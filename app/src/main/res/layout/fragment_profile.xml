@@ -12,15 +12,6 @@
     android:background="#FFFFFF">
 
 
-
-
-
-
-
-
-
-
-
     ]]>
 
     <ImageView
@@ -30,11 +21,12 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="120dp"
         android:rotationY="-42"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/rest3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.661" />
 
     <ImageView
         android:id="@+id/profile"
@@ -81,8 +73,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="392dp"
-        android:layout_height="112dp"
+        android:layout_width="393dp"
+        android:layout_height="88dp"
         android:layout_marginStart="13dp"
         android:layout_marginTop="173dp"
         android:layout_marginEnd="13dp"
@@ -90,7 +82,7 @@
         android:text="Gender :\tMale \nAge :24\nAbout : I like to talk about art, football and chess! "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -98,40 +90,43 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="140dp"
+        android:layout_height="94dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="169dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/rest1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="109dp"
-        android:layout_height="117dp"
+        android:layout_width="104dp"
+        android:layout_height="108dp"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="14dp"
-        android:layout_marginBottom="165dp"
+        android:layout_marginBottom="160dp"
         android:rotationY="42"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/rest2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="157dp"
-        android:layout_height="25dp"
+        android:layout_width="131dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="293dp"
         android:text="Favorite Places"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="285dp" /><![CDATA[
-
-
-
-
+        android:textColor="#3949AB"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" /><![CDATA[
 
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.523">

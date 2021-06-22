@@ -15,6 +15,7 @@
         android:background="#FFEDDB">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
             android:layout_width="409dp"
             android:layout_height="601dp"
             app:layout_constraintBottom_toBottomOf="parent"

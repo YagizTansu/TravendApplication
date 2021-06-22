@@ -54,23 +54,7 @@ public class MapsFragment extends Fragment {
                     LatLng userLocation = new LatLng(location.getLatitude(),location.getLongitude());
                     googleMap.addMarker(new MarkerOptions().position(userLocation).title("Your Location"));
                     googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,15));
-
-
-                    for (int i = 0 ; i < 8 ; i++){
-                        double minLat = location.getLatitude() -5 ;
-                        double maxLat = location.getLatitude() -5;
-
-                        double minLng = location.getLatitude() -5 ;
-                        double maxLng = location.getLatitude() -5;
-
-                        //Generate random int value from 50 to 100
-                        int random_Lat = (int)Math.floor(Math.random()*(maxLat-minLat+1)+minLat);
-                        int random_Lng = (int)Math.floor(Math.random()*(maxLng-minLng+1)+minLng);
-
-                        LatLng randomLocation = new LatLng(random_Lat,random_Lng);
-                        googleMap.addMarker(new MarkerOptions().position(randomLocation).title(""));
-                    }
-                */
+                    */
                 }
             };
 
@@ -87,27 +71,29 @@ public class MapsFragment extends Fragment {
                     LatLng userLastLocation = new LatLng(lastLocation.getLatitude(), lastLocation.getLongitude());
                     googleMap.addMarker(new MarkerOptions().position(userLastLocation).title("Your Location"));
 
-                    googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLastLocation, 15));
+                    googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLastLocation, 16));
                 }
 
-                LatLng userLastLocation1 = new LatLng(lastLocation.getLatitude()+ 0.003, lastLocation.getLongitude());
-                googleMap.addMarker(new MarkerOptions().position(userLastLocation1).title("Your Location"));
+                LatLng userLastLocation1 = new LatLng(lastLocation.getLatitude()+ 0.002, lastLocation.getLongitude()-0.001);
+                googleMap.addMarker(new MarkerOptions().position(userLastLocation1).title(""));
 
-                LatLng userLastLocation2 = new LatLng(lastLocation.getLatitude() -0.003, lastLocation.getLongitude());
-                googleMap.addMarker(new MarkerOptions().position(userLastLocation2).title("Your Location"));
+                LatLng userLastLocation2 = new LatLng(lastLocation.getLatitude() -0.004, lastLocation.getLongitude() + 0.004);
+                googleMap.addMarker(new MarkerOptions().position(userLastLocation2).title(""));
 
-                LatLng userLastLocation3 = new LatLng(lastLocation.getLatitude()-0.0004, lastLocation.getLongitude());
-                googleMap.addMarker(new MarkerOptions().position(userLastLocation3).title("Your Location"));
+                LatLng userLastLocation3 = new LatLng(lastLocation.getLatitude()-0.0003, lastLocation.getLongitude() + 0.0019);
+                googleMap.addMarker(new MarkerOptions().position(userLastLocation3).title(""));
 
-                for (double i = 0.0 ; i < 0.03 ; i += 0.003){
-                    LatLng newLocation = new LatLng(lastLocation.getLatitude() + i , lastLocation.getLongitude()+-i ) ;
-                    googleMap.addMarker(new MarkerOptions().position(newLocation).title(""));
-                }
+                LatLng userLastLocation4 = new LatLng(lastLocation.getLatitude()+ 0.0027, lastLocation.getLongitude()-0.0024);
+                googleMap.addMarker(new MarkerOptions().position(userLastLocation4).title(""));
+
+                LatLng userLastLocation5 = new LatLng(lastLocation.getLatitude() -0.0034, lastLocation.getLongitude() + 0.0014);
+                googleMap.addMarker(new MarkerOptions().position(userLastLocation5).title(""));
+
+                LatLng userLastLocation6 = new LatLng(lastLocation.getLatitude()-0.00015, lastLocation.getLongitude()-0.0018);
+                googleMap.addMarker(new MarkerOptions().position(userLastLocation6).title(""));
+
+
             }
-
-            /*LatLng sydney = new LatLng(-48, 2);
-            googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));*/
         }
 
     };
